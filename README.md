@@ -32,12 +32,19 @@ RAM Host (Minimal)	4GB
 CPU Host	Intel Celeron N4020
 
 1.3. Spesifikasi Server Virtual (VM) 🖥️
+
 Spesifikasi	Detail
+
 Sistem Operasi Tamu (Guest OS)	Debian Trixie (12.x)
+
 Alamat IP Server 103.217.145.187
+
 RAM VM	2 GB
+
 vCPU	1 Core
+
 Web Server yang Dipilih	Nginx 
+
 Versi PHP yang Dipakai php-fpm
 
 2. 📝 Dokumentasi Teknis dan Langkah-Langkah Pengerjaan
