@@ -55,9 +55,29 @@ Proyek ini dibuat untuk memenuhi tugas mata pelajaran **Administrasi Sistem Jari
 Kami menggunakan **NginX**. Berikut langkah-langkah utamanya:
 
 * **Instalasi:**
+* Perbarui semua paket agar Debian siap digunakan
     ```bash
-    # [Tuliskan perintah instalasi Web Server Kalian, contoh: sudo apt install nginx -y]
+    apt update && apt upgrade
     ```
+* Pasang web server Nginx
+     ```bash
+    apt install nginx
+    ```
+* Jalankan dan aktifkan otomatis saat boot:
+    ```bash
+    systemctl start nginx
+    ```
+     ```bash
+    systemctl enable nginx
+    ```
+* Cek status:
+    ```bash
+    systemctl status nginx
+    ``` 
+* Jika statusnya active (running), berarti Nginx sudah berjalan.
+* Buka browser dan akses: http://ip-server
+* Jika muncul halaman “Welcome to Nginx!”, berarti server aktif.   
+
 * **Konfigurasi Virtual Host/Server Block:**
     [Jelaskan secara singkat penyesuaian konfigurasi yang Kalian lakukan pada file utama, misalnya penentuan Document Root dan port.]
 
