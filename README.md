@@ -150,6 +150,18 @@ Kami menggunakan **php-fpm** untuk mengintegrasikan PHP dengan *Web Server*.
     ```bash
   systemctl restart nginx
     ```
+* Menguji PHP:
+* Buat file uji coba di direktori bawaan Nginx:
+    ```bash
+  nano /var/www/html/info.php
+    ```
+* Masukan script berikut:
+    ```bash
+  <?php
+   phpinfo();
+?>
+    ```
+* Buka web browser dan akses http://ip-server/info.php
 * **Integrasi:**
     [Jelaskan langkah-langkah integrasi antara PHP dengan Web Server yang Kalian pilih.]
 
