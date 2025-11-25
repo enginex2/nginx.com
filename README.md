@@ -75,7 +75,7 @@ Kami menggunakan **NginX**. Berikut langkah-langkah utamanya:
     systemctl status nginx
     ``` 
 * Jika statusnya active (running), berarti Nginx sudah berjalan.
-* Buka browser dan akses: http://ip-server
+* Buka browser dan akses: http://103.217.145.187
 * Jika muncul halaman “Welcome to Nginx!”, berarti server aktif.
 * **Konfigurasi Virtual Host/Server Block:**
     [Jelaskan secara singkat penyesuaian konfigurasi yang Kalian lakukan pada file utama, misalnya penentuan Document Root dan port.]
