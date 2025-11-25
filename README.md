@@ -9,6 +9,7 @@ Proyek ini berfokus pada implementasi layanan Web Server, konfigurasi PHP, dan p
 1.1. Informasi Kelompok
 
 Peran	Nama Lengkap	Kelas
+Ketua kelompok Ahnaf Naufadillah XITJKT-2
 
 Ketua Kelompok	Ahnaf Naufadillah	XITJKT-2
 
