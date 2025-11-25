@@ -5,9 +5,9 @@ Proyek ini dibuat untuk memenuhi tugas mata pelajaran Administrasi Sistem Jaring
 yang merupakan salah satu elemen Capaian Pembelajaran Konsentrasi Keahlian Teknik Komputer dan Jaringan (CP KKTKJ) pada program TJKT.
 Proyek ini berfokus pada implementasi layanan Web Server, konfigurasi PHP, dan pengamanan koneksi menggunakan SSL/HTTPS.
 1. 👥 Informasi Kelompok dan Spesifikasi Lingkungan Praktik
-1.1.
- 
- Informasi Kelompok
+
+1.1. Informasi Kelompok
+
 Peran	Nama Lengkap	Kelas
 
 Ketua Kelompok	Ahnaf Naufadillah	XITJKT-2
