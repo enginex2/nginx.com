@@ -20,10 +20,15 @@ Anggota 2	Ahmad Zais	XITJKT-2
 Nama Sekolah/Institusi	SMKN 1 SOREANG
 
 1.2. Spesifikasi Alat dan Bahan (Host) 🛠️
+
 Komponen	Deskripsi / Versi
+
 Virtualisasi	VMware Workstation 9
+
 Sistem Operasi Host	Windows 10
+
 RAM Host (Minimal)	4GB
+
 CPU Host	Intel Celeron N4020
 
 1.3. Spesifikasi Server Virtual (VM) 🖥️
