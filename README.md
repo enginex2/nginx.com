@@ -9,7 +9,6 @@ Proyek ini berfokus pada implementasi layanan Web Server, konfigurasi PHP, dan p
 1.1. Informasi Kelompok
 
 Peran	Nama Lengkap	Kelas
-Ketua kelompok Ahnaf Naufadillah XITJKT-2
 
 Ketua Kelompok	Ahnaf Naufadillah	XITJKT-2
 
@@ -48,9 +47,13 @@ Web Server yang Dipilih	Nginx
 Versi PHP yang Dipakai php-fpm
 
 2. 📝 Dokumentasi Teknis dan Langkah-Langkah Pengerjaan
+ 
 2.1. Persiapan Dasar (Debian Trixie di VMware)
+
 Melakukan update dan upgrade sistem.
+
 sudo apt update && sudo apt upgrade -y
+
 Memastikan konfigurasi jaringan (Bridge/NAT/Host-Only) sudah benar.
 
 2.2. Instalasi dan Konfigurasi Web Server 🌐
