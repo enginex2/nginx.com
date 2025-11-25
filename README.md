@@ -89,9 +89,9 @@ Berdasarkan pengalaman kami dalam proyek ini, berikut adalah analisis kelebihan 
 
 | Aspek | Kelebihan (NginX) 👍 | Kekurangan (NginX) 👎 |
 | :--- | :--- | :--- |
-| **Performa & Kecepatan** | kelebihannya yang pertama kecepatan tinggi untuk static content bahkan lebih cepat daripada apache, kedua mampu menangani banyak koneksi secara bersamaan, ketiga konsumsi resource rendah jadi memakan jauh lebih sedikit ram dan cpu dibandingkan web server lain, keempat skalabilitas tinggi | [Tuliskan kekurangannya.] |
-| **Kemudahan Konfigurasi**| [Tuliskan kelebihannya.] | [Tuliskan kekurangannya.] |
-| **Fitur & Modularitas** | [Tuliskan kelebihannya.] | [Tuliskan kekurangannya.] |
+| **Performa & Kecepatan** | kelebihannya yang pertama kecepatan tinggi untuk static content bahkan lebih cepat daripada apache, kedua mampu menangani banyak koneksi secara bersamaan, ketiga konsumsi resource rendah jadi memakan jauh lebih sedikit ram dan cpu dibandingkan web server lain, keempat skalabilitas tinggi | kekurangannya yang pertama tidak optimal untuk konten dinamis tanpa backend, performanya tergantung setting |
+| **Kemudahan Konfigurasi**| kelebihannya yang pertama konfigurasi lebih ringkas dan terstruktur, kedua file konfigurasi lebih rapih, ketiga banyak pengaturan performa sudah dioptimalkan secara default	 | kekurangannya yang pertama tidak mendukung .htaccess, kedua rewrite lebih sulit butuh pemahaman mendalam, ketiga perubahan konfigurasi harus reload server, keempat modul tidak bisa dinamis |
+| **Fitur & Modularitas** | kelebihannya yang pertama modul internal efisien dan stabil tidak mudah crash atau konflik antar modul, kedua fitur keamanan tersedia secara native, ketiga ringan dan modular walau modul statis, keempat mendukung HTTP/2 dan HTTP/3 | kekurangannya yang pertama modul tidak bisa dimuat secara dinamis, kedua fitur tidak selengkap apache jika kustomisasi, ketiga tidak semua modul pihak ketiga stabil, fitur advanced butuh pemahaman mendalam, keempat tidak mendukung .htaccess jadi pengguna tidak bisa menambahkan aturan pada setiap folder seperti apache |
 
 ---
 
