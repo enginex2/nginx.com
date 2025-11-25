@@ -76,8 +76,7 @@ Kami menggunakan **NginX**. Berikut langkah-langkah utamanya:
     ``` 
 * Jika statusnya active (running), berarti Nginx sudah berjalan.
 * Buka browser dan akses: http://ip-server
-* Jika muncul halaman “Welcome to Nginx!”, berarti server aktif.   
-
+* Jika muncul halaman “Welcome to Nginx!”, berarti server aktif.
 * **Konfigurasi Virtual Host/Server Block:**
     [Jelaskan secara singkat penyesuaian konfigurasi yang Kalian lakukan pada file utama, misalnya penentuan Document Root dan port.]
 
@@ -89,6 +88,67 @@ Kami menggunakan **php-fpm** untuk mengintegrasikan PHP dengan *Web Server*.
 * Agar server bisa menjalankan file .php, pasang PHP dan modul pendukung:
     ```bash
   apt install php8.4-fpm php8.4-cli
+    ```
+* Mengaktifkan PHP di Konfigurasi Default Nginx
+    ```bash
+  mv /etc/nginx/sites-available/default /etc/nginx/sites-available/default.asli
+    ```
+* Buka/buat file konfigurasi bawaan Nginx:
+    ```bash
+  nano /etc/nginx/sites-available/default
+    ```
+* Sesuaikan atau edit seperti contoh berikut:
+    ```bash
+  server {
+    listen 80 default_server;          # Dengarkan koneksi HTTP di port 80 (standar web)
+    listen [::]:80 default_server;     # Dukungan untuk IPv6
+
+    root /var/www/html;                # Folder utama tempat file website disimpan
+    index index.php index.html;        # Urutan file index yang akan dicari pertama kali
+
+    server_name _;                     # "_" artinya menerima semua nama domain/host
+
+    # Bagian utama untuk menangani request ke website
+    location / {
+        # Coba tampilkan file sesuai permintaan
+        # Jika tidak ada, coba foldernya
+        # Jika tetap tidak ada, arahkan ke index.php (penting untuk WordPress, Moodle, dll.)
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+
+    # Bagian untuk menjalankan file PHP
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;             # Include konfigurasi standar PHP-FPM
+        fastcgi_pass unix:/run/php/php8.4-fpm.sock;    # Jalur socket PHP-FPM versi 8.4
+
+        # Beritahu PHP file mana yang harus dijalankan
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        include fastcgi_params;                        # Include parameter tambahan untuk PHP
+    }
+
+    # Bagian untuk file statis (gambar, CSS, JS, font, dll.)
+    # Dikasih aturan cache supaya website lebih cepat dibuka
+    location ~* \.(?:ico|css|js|gif|jpe?g|png|woff2?|eot|ttf|svg|mp4)$ {
+        expires 6M;             # Browser boleh menyimpan file ini 6 bulan
+        access_log off;         # Jangan dicatat di log akses (hemat space/log)
+        log_not_found off;      # Jangan catat kalau file statis tidak ditemukan
+    }
+
+    # Lindungi file .htaccess atau file tersembunyi (.ht*)
+    # Biasanya digunakan Apache, tapi tetap diblokir di Nginx agar aman
+    location ~ /\.ht {
+        deny all;
+    }
+}
+    ```
+* Simpan (Ctrl+O, Enter) dan keluar (Ctrl+X)
+* Uji konfigurasi:
+   ```bash
+  nginx -t
+    ```
+* Jika hasilnya syntax is ok, restart Nginx:
+    ```bash
+  systemctl restart nginx
     ```
 * **Integrasi:**
     [Jelaskan langkah-langkah integrasi antara PHP dengan Web Server yang Kalian pilih.]
