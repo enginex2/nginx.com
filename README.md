@@ -6,11 +6,16 @@ yang merupakan salah satu elemen Capaian Pembelajaran Konsentrasi Keahlian Tekni
 Proyek ini berfokus pada implementasi layanan Web Server, konfigurasi PHP, dan pengamanan koneksi menggunakan SSL/HTTPS.
 
 1. 👥 Informasi Kelompok dan Spesifikasi Lingkungan Praktik
-1.1. Informasi Kelompok
+1.1.
+ Informasi Kelompok
 Peran	Nama Lengkap	Kelas
+
 Ketua Kelompok	Ahnaf Naufadillah	XITJKT-2
+
 Anggota 1	Meicha Clara	XITJKT-2
+
 Anggota 2	Ahmad Zais	XITJKT-2
+
 Nama Sekolah/Institusi	SMKN 1 SOREANG
 
 1.2. Spesifikasi Alat dan Bahan (Host) 🛠️
