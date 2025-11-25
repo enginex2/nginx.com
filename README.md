@@ -1,6 +1,6 @@
 # 💻 TEMPLATE LAPORAN PROYEK: PENGEMBANGAN WEB SERVER DAN APLIKASI SEDERHANA
 
-**Proyek:** [Instalasi Web Server NginX]
+**Proyek:** Instalasi Web Server NginX
 
 Proyek ini dibuat untuk memenuhi tugas mata pelajaran **Administrasi Sistem Jaringan (ASJ)**, yang merupakan salah satu elemen Capaian Pembelajaran Konsentrasi Keahlian Teknik Komputer dan Jaringan (**CP KKTKJ**) pada program TJKT. Proyek ini berfokus pada implementasi layanan Web Server, konfigurasi PHP, dan pengamanan koneksi menggunakan SSL/HTTPS.
 
@@ -12,30 +12,31 @@ Proyek ini dibuat untuk memenuhi tugas mata pelajaran **Administrasi Sistem Jari
 
 | Peran | Nama Lengkap | Kelas |
 | :--- | :--- | :--- |
-| **Ketua Kelompok** | [Nama Lengkap Ketua] | [Kelas Kalian] |
-| Anggota 1 | [Nama Lengkap Anggota 1] | [Kelas Kalian] |
-| Anggota 2 | [Nama Lengkap Anggota 2] | [Kelas Kalian] |
-| **Nama Sekolah/Institusi** | [Nama Sekolah/Institusi Kalian] | |
+| **Ketua Kelompok** | Ahnaf Naufadillah | XITJKT-2 |
+| Anggota 1 | Meicha Clara | XITJKT-2 |
+| Anggota 2 | Ahmad Zais | XTJKT-2 |
+| Anggota 3 | Sinta Bella | XITJKT-2 |
+| **Nama Sekolah/Institusi** | SMKN 1 SOREANG | |
 
 #### 1.2. Spesifikasi Alat dan Bahan (Host) 🛠️
 
 | Komponen | Deskripsi / Versi |
 | :--- | :--- |
-| **Virtualisasi** | [Versi VMware Workstation yang Digunakan, contoh: VMware Workstation 17 Pro] |
-| **Sistem Operasi Host** | [OS yang digunakan di laptop/PC utama, contoh: Windows 11 / macOS Sonoma] |
-| **RAM Host (Minimal)** | [RAM Minimal yang digunakan di Host, contoh: 8 GB] |
-| **CPU Host** | [Tuliskan jenis/seri CPU, contoh: Intel Core i5 Generasi ke-10] |
+| **Virtualisasi** | VMware Workstation 9 |
+| **Sistem Operasi Host** | Windows 10 |
+| **RAM Host (Minimal)** | 4GB |
+| **CPU Host** | Intel Celeron N4020 |
 
 #### 1.3. Spesifikasi Server Virtual (VM) 🖥️
 
 | Spesifikasi | Detail |
 | :--- | :--- |
 | **Sistem Operasi Tamu (Guest OS)** | Debian Trixie (12.x) |
-| **Alamat IP Server** | `[Tuliskan Alamat IP Lokal Server]` |
-| **RAM VM** | [Jumlah RAM yang dialokasikan untuk VM, contoh: 2 GB] |
-| **vCPU** | [Jumlah Core CPU yang dialokasikan untuk VM, contoh: 2 Core] |
-| **Web Server yang Dipilih** | **[Apache2 / Nginx / OpenLiteSpeed]** |
-| **Versi PHP yang Dipakai** | **[mod_php / php-fpm / lsphp]** |
+| **Alamat IP Server** | ` 103.217.145.187` |
+| **RAM VM** | 2 GB |
+| **vCPU** | 1 Core |
+| **Web Server yang Dipilih** | **Nginx** |
+| **Versi PHP yang Dipakai** | **php-fpm** |
 
 ---
 
@@ -51,7 +52,7 @@ Proyek ini dibuat untuk memenuhi tugas mata pelajaran **Administrasi Sistem Jari
 
 #### 2.2. Instalasi dan Konfigurasi Web Server 🌐
 
-Kami menggunakan **[NAMA WEB SERVER]**. Berikut langkah-langkah utamanya:
+Kami menggunakan **NginX**. Berikut langkah-langkah utamanya:
 
 * **Instalasi:**
     ```bash
@@ -62,12 +63,12 @@ Kami menggunakan **[NAMA WEB SERVER]**. Berikut langkah-langkah utamanya:
 
 #### 2.3. Konfigurasi PHP 🐘
 
-Kami menggunakan **[JENIS PHP: mod_php / php-fpm / lsphp]** untuk mengintegrasikan PHP dengan *Web Server*.
+Kami menggunakan **php-fpm** untuk mengintegrasikan PHP dengan *Web Server*.
 
 * **Instalasi PHP:**
+* Agar server bisa menjalankan file .php, pasang PHP dan modul pendukung:
     ```bash
-    # [Tuliskan perintah instalasi PHP dan modul yang dibutuhkan]
-    sudo apt install php-fpm php-mysql
+  apt install php8.4-fpm php8.4-cli
     ```
 * **Integrasi:**
     [Jelaskan langkah-langkah integrasi antara PHP dengan Web Server yang Kalian pilih.]
@@ -78,7 +79,7 @@ Untuk mengaktifkan akses HTTPS, kami membuat *self-signed certificate*.
 
 1.  Membuat direktori untuk *certificate*.
 2.  Membuat *Key* dan *Certificate* menggunakan OpenSSL.
-3.  Memodifikasi konfigurasi *Web Server* untuk menggunakan port **443** dan menunjuk ke *certificate* yang telah dibuat, serta memastikan akses dapat dilakukan melalui `https://[IP_SERVER]`.
+3.  Memodifikasi konfigurasi *Web Server* untuk menggunakan port **443** dan menunjuk ke *certificate* yang telah dibuat, serta memastikan akses dapat dilakukan melalui `https://103.217.145.187`.
 
 ---
 
@@ -86,9 +87,9 @@ Untuk mengaktifkan akses HTTPS, kami membuat *self-signed certificate*.
 
 Berdasarkan pengalaman kami dalam proyek ini, berikut adalah analisis kelebihan dan kekurangan dari *Web Server* yang kami gunakan:
 
-| Aspek | Kelebihan ([NAMA WEB SERVER]) 👍 | Kekurangan ([NAMA WEB SERVER]) 👎 |
+| Aspek | Kelebihan (NginX) 👍 | Kekurangan (NginX) 👎 |
 | :--- | :--- | :--- |
-| **Performa & Kecepatan** | [Tuliskan kelebihannya.] | [Tuliskan kekurangannya.] |
+| **Performa & Kecepatan** | kelebihannya yang pertama kecepatan tinggi untuk static content bahkan lebih cepat daripada apache, kedua mampu menangani banyak koneksi secara bersamaan, ketiga konsumsi resource rendah jadi memakan jauh lebih sedikit ram dan cpu dibandingkan web server lain, keempat skalabilitas tinggi | [Tuliskan kekurangannya.] |
 | **Kemudahan Konfigurasi**| [Tuliskan kelebihannya.] | [Tuliskan kekurangannya.] |
 | **Fitur & Modularitas** | [Tuliskan kelebihannya.] | [Tuliskan kekurangannya.] |
 
