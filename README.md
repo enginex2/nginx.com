@@ -191,7 +191,7 @@ Berdasarkan pengalaman kami dalam proyek ini, berikut adalah analisis kelebihan 
 
 #### 4.1. Kesan Selama Proses Pengerjaan ✨
 
-[Tuliskan kesan anggota kelompok, misalnya: "Kami merasa mendapatkan banyak ilmu baru, terutama dalam praktik Version Control menggunakan Git dan GitHub yang belum pernah kami lakukan sebelumnya."]
+[kami merasa mendapat banyak ilmu baru dan instalasi nginx terasa cepat dan ringan jika dibandingkan dengan apache yang terasa agak berat terutama dalam hal manajemen request dan pemakaian sumber daya server. Kami jadi benar-benar paham kenapa Nginx sering dijuluki sebagai high perfomance web server yang ideal untuk load balancing dan reverse proxy, meskipun di awal kami sempat sedikit pusing karena harus belajar konfigurasi PHP-FPM yang berbeda dengan cara kerja Apache.]
 
 #### 4.2. Kendala dan Solusi yang Diterapkan 💡
 
