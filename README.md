@@ -161,7 +161,7 @@ Kami menggunakan **php-fpm** untuk mengintegrasikan PHP dengan *Web Server*.
    phpinfo();
 ?>
     ```
-* Buka web browser dan akses http://ip-server/info.php
+* Buka web browser dan akses http://103.217.145.187/info.php
 * **Integrasi:**
     [Jelaskan langkah-langkah integrasi antara PHP dengan Web Server yang Kalian pilih.]
 
