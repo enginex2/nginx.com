@@ -194,12 +194,7 @@ Berdasarkan pengalaman kami dalam proyek ini, berikut adalah analisis kelebihan 
 [kami merasa mendapat banyak ilmu baru dan instalasi nginx terasa cepat dan ringan jika dibandingkan dengan apache yang terasa agak berat terutama dalam hal manajemen request dan pemakaian sumber daya server. Kami jadi benar-benar paham kenapa Nginx sering dijuluki sebagai high perfomance web server yang ideal untuk load balancing dan reverse proxy, meskipun di awal kami sempat sedikit pusing karena harus belajar konfigurasi PHP-FPM yang berbeda dengan cara kerja Apache.]
 
 #### 4.2. Kendala dan Solusi yang Diterapkan 💡
-
-| Kendala yang Kalian Hadapi 🚧 |
-| :--- | :--- |
-| Selama proses penginstalan kami tidak menemukan kendala apa pun, proses berjalan dengan lancar |
-
----
+Selama proses penginstalan kami tidak menemukan kendala apa pun, proses berjalan dengan lancar
 
 ### 5. 📂 Dokumentasi Konten Website
 
