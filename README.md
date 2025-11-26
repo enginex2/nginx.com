@@ -195,9 +195,9 @@ Berdasarkan pengalaman kami dalam proyek ini, berikut adalah analisis kelebihan 
 
 #### 4.2. Kendala dan Solusi yang Diterapkan 💡
 
-| Kendala yang Kalian Hadapi 🚧 | Solusi yang Ditemukan ✅ |
+| Kendala yang Kalian Hadapi 🚧 |
 | :--- | :--- |
-| [Tuliskan kendala teknis atau kolaborasi lain yang Kalian hadapi.] | [Jelaskan solusi spesifik Kalian.] |
+| Selama proses penginstalan kami tidak menemukan kendala apa pun, proses berjalan dengan lancar |
 
 ---
 
