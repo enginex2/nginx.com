@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - [Ahmad Zaiz Maulana Arifin]</title>
+    
+    <style>
+        /* RESET SEDERHANA */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* CONTAINER UTAMA */
+        main {
+            max-width: 900px; /* Lebar CV */
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* HEADER/PROFIL */
+        header#profil {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 3px solid #333; /* Garis pemisah */
+        }
+
+        .foto-profil {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%; /* Membuat foto menjadi bulat */
+            object-fit: cover;
+            margin-bottom: 10px;
+            border: 3px solid #ccc;
+        }
+
+        header h1 {
+            margin: 5px 0 0;
+            color: #333;
+            font-size: 2.5em;
+        }
+
+        .jabatan {
+            color: #555;
+            font-style: italic;
+            margin-top: 5px;
+        }
+
+        /* SECTION UMUM */
+        section {
+            padding: 15px 0;
+            border-bottom: 1px dashed #ccc;
+        }
+
+        section:last-child {
+            border-bottom: none; /* Hilangkan garis di bagian akhir */
+        }
+
+        h2 {
+            color: #007bff; /* Warna biru untuk judul section */
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        /* LISTS (Kontak, Keterampilan) */
+        ul {
+            list-style: none; /* Hilangkan bullet default */
+            padding-left: 0;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+        }
+
+        /* PENGALAMAN KERJA / PENDIDIKAN */
+        .pekerjaan, .riwayat-pendidikan {
+            margin-bottom: 15px;
+        }
+
+        .pekerjaan h3, .riwayat-pendidikan h3 {
+            margin: 5px 0;
+            color: #333;
+            font-size: 1.2em;
+        }
+
+        .perusahaan, .institusi {
+            color: #777;
+            margin: 0 0 5px;
+            font-style: italic;
+        }
+
+        /* KETERAMPILAN */
+        .daftar-keterampilan li {
+            background: #eef;
+            padding: 5px 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            display: inline-block; /* Membuat keterampilan berjejer */
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+
+        /* LINK */
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    </head>
+<body>
+
+    <header id="profil">
+        <img src="zais.jpg" alt="Foto Profil" class="foto-profil">
+        <h1>Ahmad Zaiz Maulana Arifin</h1>
+        <p class="jabatan">XITJKT-2</p>
+    </header>
+
+    <main>
+        <section id="kontak">
+            <h2>📞 Kontak</h2>
+            <ul>
+                <li>Email: ahmadzaiz275@gmail.com</a></li>
+                <li>No hp:089605610404</li>
+                <li>Alamat: kap.karang anyar 
+            </ul>
+        </section>
+
+        <section id="ringkasan">
+            <h2>📝 Ringkasan Diri</h2>
+            <p>Saya seorang siswa 11 XITJKT-2 ingin belajar membangun web server </p>
+        </section>
+
+        <section id="pendidikan">
+            <h2>🎓 Pendidikan</h2>
+             <div class="riwayat-pendidikan">
+                <h3>SDN BOJONG KONENG 1</h3>
+                <p class="institusi">[2014] - [2019]</p>
+                 <h3>SMPN 4 SOREANG</h3>
+                <p class="institusi">[2020] - [2023]</p>
+                 <h3>SMKN 1 SOREANG</h3>
+                <p class="institusi">[2024] - [2027]</p>
+            </div>
+        </section>
+
+        <section id="keterampilan">
+            <h2>🛠 Keterampilan</h2>
+            <ul class="daftar-keterampilan">
+                <li>Soft Skills: Kerja Sama Tim</li>
+            </ul>
+        </section>
+
+    </main>
+    
+    </body>
+</html>
