@@ -333,5 +333,5 @@ Ada pada repository kami (nginex2)
 
 **Link Video YouTube:**
 
-[![Thumbnail Video Pengerjaan]([[https://img.youtube.com/vi/1-qlNtQS1OA/0.jpg)](https://www.youtube.com/watch?v=1-qlNtQS1OA](https://youtu.be/UGz_oqmz8kc?si=GgKLpAzogNx-OLPe)](https://youtu.be/UGz_oqmz8kc?si=GgKLpAzogNx-OLPe))
+[[[![Thumbnail Video Pengerjaan]](https://youtu.be/PAfZ7leapCA)
 
