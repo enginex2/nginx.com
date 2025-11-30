@@ -327,7 +327,7 @@ Selama proses penginstalan kami tidak menemukan kendala apa pun, proses berjalan
 
 ### 5. 📂 Dokumentasi Konten Website
 
-Ada pada repository kami (nginex2)
+Ada pada repository kelompok nginx (/html) berisi profil anggota kelompok serta cv masing" dari anggota kelompok nginex
 
 ### 6. 🎬 Dokumentasi Video Pengerjaan
 
