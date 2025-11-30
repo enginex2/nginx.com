@@ -333,5 +333,5 @@ Ada pada repository kami (nginex2)
 
 **Link Video YouTube:**
 
-[[[![Thumbnail Video Pengerjaan]](https://youtu.be/PAfZ7leapCA)
+[![Tutorial Instalasi Web Server NgineX]](https://youtu.be/PAfZ7leapCA)
 
