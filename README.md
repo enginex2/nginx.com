@@ -192,7 +192,9 @@ Untuk mengaktifkan akses HTTPS, kami membuat *self-signed certificate*.
     ```
 * Ubah isinya sekaligus pelajari scripnya seperti dibawah ini :
  ```bash
-  server {
+ # Konfigurasi HTTP (port 80)
+# ==========================
+server {
     listen 80 default_server;          # Dengarkan koneksi HTTP di port 80
     listen [::]:80 default_server;     # Dukungan untuk IPv6
 
@@ -229,6 +231,10 @@ Untuk mengaktifkan akses HTTPS, kami membuat *self-signed certificate*.
         log_not_found off;      # Jika file tidak ada, jangan penuhkan log
     }
 }
+
+# ==========================
+# Konfigurasi HTTPS (port 443, SSL/TLS)
+# ==========================
 server {
     listen 443 ssl default_server;      # Dengarkan koneksi HTTPS di port 443
     listen [::]:443 ssl default_server; # Dukungan untuk IPv6
