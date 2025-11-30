@@ -327,15 +327,11 @@ Selama proses penginstalan kami tidak menemukan kendala apa pun, proses berjalan
 
 ### 5. 📂 Dokumentasi Konten Website
 
-Seluruh *source code* (Halaman Utama dan Halaman Profil) yang berada di *document root* server telah disalin dan di-*commit* ke dalam folder `/html` di *repository* GitHub ini.
-
----
+Ada pada repository kami (nginex2)
 
 ### 6. 🎬 Dokumentasi Video Pengerjaan
 
-Seluruh proses pengerjaan telah direkam dan diunggah ke YouTube.
-
 **Link Video YouTube:**
 
-[![Thumbnail Video Pengerjaan](https://img.youtube.com/vi/1-qlNtQS1OA/0.jpg)](https://www.youtube.com/watch?v=1-qlNtQS1OA)
+[![Thumbnail Video Pengerjaan]([https://img.youtube.com/vi/1-qlNtQS1OA/0.jpg)](https://www.youtube.com/watch?v=1-qlNtQS1OA](https://youtu.be/UGz_oqmz8kc?si=GgKLpAzogNx-OLPe))
 
