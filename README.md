@@ -333,5 +333,5 @@ Ada pada repository kelompok nginx (/html) berisi profil anggota kelompok serta 
 
 **Link Video YouTube:**
 
-[[![Tutorial Instalasi Web Server NgineX]](https://youtu.be/PAfZ7leapCA)](https://youtu.be/EzqDV_pfGFU)
+https://youtu.be/EzqDV_pfGFU
 
